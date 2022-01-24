@@ -32,7 +32,7 @@ export const PostItemTag = styled.div`
     font-weight: 700;
     border-radius: 50%;
     color: #fff;
-    background: ${props => props.background};
+    background: ${props => props.background ? props.background : "#1fa1f2"};
 `
 
 export const PostItemInfo = styled.div`
