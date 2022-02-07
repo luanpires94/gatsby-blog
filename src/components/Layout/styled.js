@@ -25,4 +25,17 @@ export const LayoutMain = styled.main`
   ${media.lessThan("large")`
     padding: 4.125rem 0 3rem 0;
   `}
+
+  .backLink {
+    display: flex;
+    justify-content: center;
+
+    font-size: 2rem;
+    color: var(--highlight);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--texts)
+    }
+  }
 `
