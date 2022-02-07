@@ -13,3 +13,5 @@ export const AboutItems = styled.li`
     font-weight: 600;
     color: var(--texts);
 `
+
+export const IconsWrapper = styled.span``
