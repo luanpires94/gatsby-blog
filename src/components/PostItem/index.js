@@ -23,9 +23,9 @@ const PostItem = ({
                 <S.PostItemTitle>
                     {title}
                 </S.PostItemTitle>
-                <S.PositItemDescription>
+                <S.PostItemDescription>
                     {description}
-                </S.PositItemDescription>
+                </S.PostItemDescription>
             </S.PostItemInfo>
         </S.PostItemWrapper>
     </S.PostItemLink>

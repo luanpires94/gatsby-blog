@@ -1,33 +1,43 @@
-import styled from 'styled-components'
+import styled from "styled-components"
+import media from "styled-media-query"
 
 export const SocialLinksWrapper = styled.nav`
-    width: 100%;
-    margin: 2rem auto;
+  margin: 2rem auto;
+  width: 100%;
+
+  ${media.lessThan("large")`
+    display: none;
+  `}
 `
 
 export const SocialLinksList = styled.ul`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 `
 
-export const SocialLinksItem = styled.li``
+export const SocialLinksItem = styled.li`
+
+  margin-right: 1rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+`
 
 export const SocialLinksLink = styled.a`
-    color: #8899a6;
-    text-decoration: none;
-    transition: color 0.5s;
+  color: var(--texts);
+  text-decoration: none;
+  transition: color 0.5s;
 
-    &:hover {
-
-        color: #1fa1f2;
-    }
+  &:hover {
+    color: var(--highlight);
+  }
 `
 
 export const IconWrapper = styled.div`
-    width: 30px;
-    height: 30px;
-    fill: #bbb;
-    margin-right: .5rem;
+  fill: #bbb;
+  width: 30px;
+  height: 30px;
 `
