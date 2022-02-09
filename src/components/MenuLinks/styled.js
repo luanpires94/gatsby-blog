@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
 
 export const MenuLinksWrapper = styled.nav`
   ${media.lessThan("large")`
